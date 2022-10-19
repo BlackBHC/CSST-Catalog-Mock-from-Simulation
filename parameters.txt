@@ -1,0 +1,19 @@
+input_au23.dat # Filename of the input data, which should under the subdirectory ini
+output_au23.dat # Filename of the output data, which will be put under subdirectory output
+25.0d0 # Including only stars V mag<ChosenLim
+0.01 # The fraction to produce (with random sample, aiming to reduce the file size)
+-8.0d0 # xsum
+0.0d0 # ysum
+0.02d0 # zsum
+1.1d0 # vlsr: V_lsr = vlsr * 228.14 km/s
+11.1d0 # usum
+12.24d0 # vsum
+7.25d0 # wsum
+0.05 # The minimum of the mass' lower bound during IMF sampling, aiming to avoid possible negative value
+0 #Format of the output file, 0=ASCII, 1=binary, 2=fits
+1 #1 for add in telescope error (Gaia), 0 for not.
+1 #1 for add in extinction map, 0 for not
+1 #Type of the extinction map, meaningful only when the preceding one=1, 1=3d Schlegel map in the paper, 0=2d case
+1 #Type of the IMF, 1=Salpeter, 2=Kroupa
+-1314 #The seed of the random number
+
